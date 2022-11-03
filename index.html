@@ -2,15 +2,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ベイビーフォトプロジェクト</title>
+    <title>近大ベイビーフォトプロジェクト</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
 </head>
 <body>
 
-   <form class="w-75 mx-auto">
-        <p class="mt-3">なりすましによる入力を防ぐためにあなたの氏名をご記入ください（SNSにあなたの氏名をアップすることは絶対にありません）。</p>
+    <form class="w-75 mx-auto">
+        <p class="mt-3">なりすましによる入力を防ぐために、あなたの氏名をご記入ください（SNSにあなたの氏名をアップすることは絶対にありません）。</p>
         <div>
             <input class="form-control w-100 mt-1" name="sex" placeholder="" required>
         </div>
@@ -73,11 +73,11 @@
         $(function () {
             $('form').submit(function () {
                 const name    = $('input[name="name"]').val();
-                const sex = $('input[name="sex"]').val();
-                const month  = $('input[name="month"]').val();
-                const weight  = $('input[name="weight"]').val();
-                const message = $('input[name="message"]').val();
-                const msg = `${name}\n${sex}\n${month}\n${weight}\n${message}`;
+                const udetate = $('input[name="udetate"]').val();
+                const fukkin  = $('input[name="fukkin"]').val();
+                const haikin  = $('input[name="haikin"]').val();
+                const sukuwat = $('input[name="sukuwat"]').val();
+                const msg = `${name}\n${udetate}\n${fukkin}\n${haikin}\n${sukuwat}`;
                 sendText(msg);
                 return false;
             });
